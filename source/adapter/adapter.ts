@@ -12,6 +12,7 @@ export class Soldier implements ISoldier {
     }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 export class Jedi implements IJedi {
     constructor(public level: number) {
         this.level = level;
@@ -22,6 +23,7 @@ export class Jedi implements IJedi {
     }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class JediAdapter implements IJediAdapter {
     constructor(public jedi: Jedi) {
         this.jedi = jedi;

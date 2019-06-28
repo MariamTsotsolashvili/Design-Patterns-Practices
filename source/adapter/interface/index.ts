@@ -4,11 +4,11 @@ export interface IJediAdapter {
     jedi: Jedi;
     attack(): number;
 }
-export interface ISoldier{
-    level:number;
+export interface ISoldier {
+    level: number;
     attack(): number;
 }
 export interface IJedi {
-    level:number;
+    level: number;
     attackWithSaber(): number;
 }

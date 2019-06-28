@@ -1,7 +1,8 @@
-import {IInfo,Kind} from "./interface/index"
+import {IDroid, Kind} from "./interface/index";
 
-function droidProducer(Kind:Kind):() =>IInfo {
-    if (Kind === 'battle'){
+// tslint:disable-next-line:no-shadowed-variable
+function droidProducer(Kind: Kind): () => IDroid {
+    if (Kind === "battle") {
         return battleDroidFactory;
     }
 
@@ -17,13 +18,14 @@ function pilotDroidFactory() {
 }
 
 class B1 implements IDroid {
-    info() {
+    public info() {
         return "B1, Battle Droid";
     }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class Rx24 {
-    info() {
+    public info() {
         return "Rx24, Pilot Droid";
     }
 }

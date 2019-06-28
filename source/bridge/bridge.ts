@@ -8,6 +8,7 @@ abstract class Printer {
     constructor(public ink: Ink) {}
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class EpsonPrinter extends Printer implements IPrinter {
     constructor(ink: Ink) {
         super(ink);
@@ -18,7 +19,7 @@ class EpsonPrinter extends Printer implements IPrinter {
     }
 }
 
-
+// tslint:disable-next-line:max-classes-per-file
 class HPpinrter extends Printer implements IPrinter {
     constructor(ink: Ink) {
         super(ink);
@@ -29,6 +30,7 @@ class HPpinrter extends Printer implements IPrinter {
     }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 abstract class Ink implements IInk {
 
     constructor(public type: string) {
@@ -39,12 +41,14 @@ abstract class Ink implements IInk {
     }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class AcrylincInc extends Ink {
     constructor() {
         super("acrylic-based");
     }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class Alcoholink extends Ink {
     constructor() {
         super("alcohol-based");
